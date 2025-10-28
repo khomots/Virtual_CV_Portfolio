@@ -1,0 +1,598 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',
+    sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:have
+{
+    color: red;
+    text-shadow: 0 0 25px orangered,
+    0 0 50px orangered;
+    transform: scale(1.1);
+}
+.span
+{
+    color: orangered;
+}
+.navbar a
+{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact
+{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+}
+.contact:hover
+{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+.home
+{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content
+{
+    max-width: 800px;
+}
+.home-content h3
+{
+    font-size: 42px;
+}
+.home-content h1
+{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p
+{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box
+{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1
+{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover
+{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2
+{
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover
+{
+    background-color: white;
+    color: orangered;
+}
+.img-box img
+{
+    border-radius: 50%;
+    width: 550px;
+}
+
+::-webkit-scrollbar
+{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+/* style.css */
+
+/* --- Services Section Styling --- */
+.services-section {
+    padding: 12% 8%; /* Consistent padding with other sections */
+    background: black; /* Or choose a color that contrasts with your home section */
+    color: white; /* Text color for dark background */
+    text-align: center;
+}
+
+.services-section .heading {
+    margin-bottom: 3em; /* Space below the main heading */
+    color: white; /* Ensure heading color is visible */
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+    gap: 2.5em; /* Space between service boxes */
+}
+
+.service-box {
+    background: rgb(34, 34, 34); /* Slightly lighter dark background for boxes */
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 2.5em 2em;
+    text-align: center;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, basis */
+    max-width: 350px; /* Max width for individual boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Indicate it's clickable, even if no direct JS action */
+}
+
+.service-box:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 0 35px orangered; /* Glow effect on hover */
+}
+
+.service-box i {
+    font-size: 4em; /* Size of the Boxicon */
+    color: orangered;
+    margin-bottom: 0.5em;
+}
+
+.service-box h3 {
+    font-size: 2em; /* Size of the service title */
+    color: white;
+    margin-bottom: 0.7em;
+}
+
+.service-box p {
+    font-size: 1.1em;
+    color: #ccc; /* Lighter text for readability on dark background */
+    line-height: 1.6;
+}
+
+/* style.css */
+
+/* --- Experience Section Styling --- */
+.experience-section {
+    padding: 12% 8%; /* Consistent padding with other sections */
+    background: rgb(241, 241, 241); /* Or your preferred background color */
+    color: black; /* Text color for light background */
+    text-align: center;
+}
+
+.experience-section .heading {
+    margin-bottom: 3em; /* Space below the main heading */
+    color: black; /* Ensure heading color is visible */
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 2.5em; /* Space between experience boxes */
+}
+
+.experience-item {
+    background: white; /* Card-like background for each entry */
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 2.5em 2em;
+    text-align: left; /* Align text within the box to the left */
+    flex: 1 1 400px; /* Flex-grow, flex-shrink, basis. Adjust basis as needed */
+    max-width: 500px; /* Max width for individual boxes */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 0 35px orangered; /* Glow effect on hover */
+}
+
+.experience-item h3 {
+    font-size: 2em; /* Size of the job title */
+    color: orangered; /* Highlight the job title */
+    margin-bottom: 0.5em;
+}
+
+.experience-item .company {
+    font-size: 1.2em;
+    color: #555; /* Muted color for company name */
+    margin-bottom: 0.5em;
+}
+
+.experience-item .dates {
+    font-size: 1em;
+    color: #777; /* Muted color for dates */
+    margin-bottom: 1em;
+}
+
+.experience-item ul {
+    list-style: disc; /* Use disk bullets for list items */
+    margin-left: 1.5em; /* Indent the list */
+    font-size: 1.1em;
+    color: #333; /* Darker text for readability */
+}
+
+.experience-item ul li {
+    margin-bottom: 0.5em; /* Space between list items */
+}
+
+.projects-section {
+    padding: 12% 8%;
+    background: black; /* Example background, choose what fits your theme */
+    color: white;
+    text-align: center;
+}
+
+.projects-section .heading {
+    margin-bottom: 3em;
+    color: white;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em; /* Space between project items */
+}
+
+.project-item {
+    background: rgb(34, 34, 34); /* Darker background for project cards */
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, basis */
+    max-width: 380px; /* Max width for each project card */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push links to bottom */
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px orangered;
+}
+
+.project-item .project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for images */
+}
+
+.project-item h3 {
+    font-size: 1.8em;
+    color: orangered;
+    margin-bottom: 1em;
+}
+
+.project-item .project-description {
+    font-size: 1.1em;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    flex-grow: 1; /* Allows description to take available space */
+}
+
+.project-item .technologies-used {
+    font-size: 0.95em;
+    color: #aaa;
+    margin-top: 1em; /* Space above technologies */
+    margin-bottom: 1.5em;
+    font-style: italic;
+}
+
+.project-item .project-links {
+    margin-top: auto; /* Pushes links to the bottom of the flex container */
+    display: flex;
+    justify-content: center;
+    gap: 1em; /* Space between buttons */
+}
+
+.project-item .btn-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 8px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.project-item .btn-link:hover {
+    background-color: white;
+    color: orangered;
+    border-color: orangered;
+}
+
+.project-item .btn-link i {
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+.about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: white;
+}
+.about-img img
+{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px orangered,
+    0 0 50px orangered;
+    border-radius: 50%;
+}
+.about-content h2
+{
+    text-align: left;
+    color: black;
+    font-size: 42px;
+}
+.about-content h3
+{
+    font-size: 63px;
+    color: black;
+}
+.about-content p
+{
+    color: black;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.education-section 
+{
+    padding: 12% 8%; /* Consistent padding with other sections */
+    background: black; /* Or match your home section background */
+    color: white; /* Default text color */
+    text-align: center;
+}
+
+.education-section .heading 
+{
+    margin-bottom: 2em; /* Space below the main heading */
+    color: white; /* Ensure heading color is visible */
+}
+
+.education-item 
+{
+    background: white; /* Card-like background for each entry */
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 2em;
+    margin-bottom: 2em; /* Space between education entries */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px; /* Limit width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-item:hover 
+{
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 0 25px orangered; /* Highlight on hover */
+}
+
+.education-item h3 
+{
+    font-size: 28px;
+    color: orangered; /* Highlight the degree/certificate */
+    margin-bottom: 0.5em;
+}
+
+.education-item .institution 
+{
+    font-size: 20px;
+    color: #555; /* Slightly muted color for institution */
+    margin-bottom: 0.5em;
+}
+
+.education-item .dates 
+{
+    font-size: 16px;
+    color: #777; /* Muted color for dates */
+}
+
+.contact-form h2
+{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form
+{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea
+{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer {
+    position: relative;
+    /* bottom: 0; Removing 'bottom: 0;' is often better for flow unless fixed position is desired */
+    width: 100%;
+    padding: 40px 0;
+    background-color: gray;
+    color: white; /* Ensure text color is set for the footer */
+    text-align: center; /* Center everything within the footer by default */
+}
+
+.footer .social {
+    padding-bottom: 25px;
+    /* text-align: center; - Already handled by parent .footer */
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    /* line-height: 38px; - Use flexbox for vertical centering within the icon box */
+    display: inline-flex; /* Use inline-flex for better vertical alignment of box-icon */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.footer .social a:hover {
+    transform: scale(1.2); /* Just scale, no translation */
+    color: orangered; /* Icon color on hover */
+    background-color: white; /* New: Background color on hover for a clearer effect */
+    border-color: white; /* Match border to background on hover */
+    box-shadow: inset 0 0 15px white, 0 0 15px white; /* Adjust glow on hover */
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    list-style: none; /* Remove default list bullets */
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 10px; /* Add some vertical spacing for wrapping on smaller screens */
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease; /* Only transition the border for smoother effect */
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid orangered;
+}
+
+.footer .copyright {
+    margin-top: 25px; /* Increased margin for better separation */
+    text-align: center;
+    font-size: 14px; /* Slightly larger font size for readability */
+    color: #ccc; /* Slightly muted white for copyright */
+}
+
+/* Add a simple media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .footer ul li {
+        display: block; /* Stack list items vertically on small screens */
+        padding: 5px 0;
+    }
+}
